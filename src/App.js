@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import './App.css'
 import { Parallax } from 'react-scroll-parallax';
 import Header from './components/Header'
-import Form from './components/Form'
+import Form1 from './components/Form1'
+import Form2 from './components/Form2'
 import Example from './components/Example'
 
 
@@ -13,10 +14,11 @@ class App extends Component {
         <div className="container-fluid">
           <Header />
           <div className="row">
-            <Form 
+            {/* <Form1 
               yoffsetmax={20}
               yoffsetmin={-20}
-              test={'slowerScrollRate'}/>
+              test={'slowerScrollRate'}/> */}
+            <Form2 />
             <Example />
           </div>
         </div>
