@@ -1,17 +1,10 @@
 import React, { Component } from 'react'
 import '../App.css'
-import { Parallax } from 'react-scroll-parallax';
-const trees = require('../images/trees.jpg')
 
 class Form1 extends Component {
   render() {
     return (
-      <Parallax
-        className="col-sm left"
-        offsetYMax={this.props.yoffsetmax}
-        offsetYMin={this.props.yoffsetmin}
-        slowerScrollRate
-        tag="figure">
+      <div className="col-sm left">
         
         <h2>Tell us a little about yourself...</h2>
        
@@ -64,7 +57,7 @@ class Form1 extends Component {
               <input class="form-check-input" type="checkbox" value="Hispanic or Latino" id="4"/>
               <label class="form-check-label" for="4">
               Hispanic or Latino
-              </label>
+              </label> 
             </div>
             
             <div class="form-check">
@@ -93,7 +86,7 @@ class Form1 extends Component {
         
         </form>
       
-      </Parallax>
+      </div>
     )
   }
 }
